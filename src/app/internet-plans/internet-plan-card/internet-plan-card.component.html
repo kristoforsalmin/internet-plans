@@ -1,0 +1,9 @@
+<div>
+  <h2>{{ plan.name }}</h2>
+  <div>{{ plan.readableDownloadSpeed }}</div>
+  <div>{{ plan.readableUploadSpeed }}</div>
+  <div>{{ plan.readablePrice }}</div>
+  <ul>
+    <li *ngFor="let benefit of plan.benefits">{{ benefit }}</li>
+  </ul>
+</div>
