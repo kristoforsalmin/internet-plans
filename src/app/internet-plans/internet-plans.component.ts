@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { InternetPlanService } from '../internet-plan.service'
-import { InternetPlan } from '../internet-plan'
+import { InternetPlanService } from './internet-plan.service'
+import { InternetPlan } from './internet-plan'
 
 @Component({
   selector: 'app-internet-plans',
