@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Magenta Home M",
+    "downloadSpeed": 50,
+    "readableDownloadSpeed": "50 MBit/s",
+    "uploadSpeed": 10,
+    "readableUploadSpeed": "10 MBit/s",
+    "price": 20.53,
+    "readablePrice": "20,53 €",
+    "benefits": [
+      "200 € Cashback",
+      "Free & Fast Setup"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Goggle Giga 250",
+    "downloadSpeed": 250,
+    "readableDownloadSpeed": "250 MBit/s",
+    "uploadSpeed": 50,
+    "readableUploadSpeed": "50 MBit/s",
+    "price": 29.99,
+    "readablePrice": "29,99 €",
+    "benefits": [
+      "Fiber Optic Network",
+      "Most Advanced Wi-Fi"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Magenta Home L",
+    "downloadSpeed": 100,
+    "readableDownloadSpeed": "100 MBit/s",
+    "uploadSpeed": 40,
+    "readableUploadSpeed": "40 MBit/s",
+    "price": 22.20,
+    "readablePrice": "22,20 €",
+    "benefits": [
+      "250 € Cashback",
+      "Including TV",
+      "Free & Fast Setup"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Goggle Giga 500",
+    "downloadSpeed": 500,
+    "readableDownloadSpeed": "500 MBit/s",
+    "uploadSpeed": 100,
+    "readableUploadSpeed": "100 MBit/s",
+    "price": 34.99,
+    "readablePrice": "34,99 €",
+    "benefits": [
+      "Fiber Optic Network",
+      "Most Advanced Wi-Fi",
+      "Including TV"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Rocket DSL 16",
+    "downloadSpeed": 16,
+    "readableDownloadSpeed": "16 MBit/s",
+    "uploadSpeed": 1,
+    "readableUploadSpeed": "1 MBit/s",
+    "price": 9.99,
+    "readablePrice": "9,99 €",
+    "benefits": [
+      "Good Ol’ DSL"
+    ]
+  }
+]
