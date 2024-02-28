@@ -1,8 +1,8 @@
-<h1>Internet Plans</h1>
+<h1 class="title">Internet Plans</h1>
 
-<label *ngIf="internetPlans.length > 0">
+<label class="sort-by" *ngIf="internetPlans.length > 0">
   Shows
-  <select [(ngModel)]="sortedBy">
+  <select class="sort-options" [(ngModel)]="sortedBy">
     <option *ngFor="let option of sortOptions" [ngValue]="option">
       {{ option.label | lowercase }}
     </option>

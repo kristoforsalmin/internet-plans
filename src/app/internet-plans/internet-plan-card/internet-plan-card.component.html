@@ -1,10 +1,35 @@
-<div>
-  <div>{{ position }}</div>
-  <h2>{{ plan.name }}</h2>
-  <div>{{ plan.readableDownloadSpeed }}</div>
-  <div>{{ plan.readableUploadSpeed }}</div>
-  <div>{{ plan.readablePrice }}</div>
-  <ul>
-    <li *ngFor="let benefit of plan.benefits">{{ benefit }}</li>
+<div class="card">
+  <div class="card-position">{{ position }}</div>
+  <h2 class="plan-name card-segment">{{ plan.name }}</h2>
+  <div class="plan-speed-wrapper card-segment">
+    <div class="plan-download-speed plan-speed">
+      <svg class="plan-speed-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
+      {{ plan.readableDownloadSpeed }}
+    </div>
+    <div class="plan-upload-speed plan-speed">
+      <svg class="plan-speed-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+      </svg>
+      {{ plan.readableUploadSpeed }}
+    </div>
+  </div>
+  <ul class="plan-benefit-list card-segment">
+    <li class="plan-benefit-item" *ngFor="let benefit of plan.benefits">
+      <svg class="plan-benefit-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+      </svg>
+      {{ benefit }}
+    </li>
   </ul>
+  <div class="price-wrapper card-segment">
+    <div class="plan-price">{{ plan.readablePrice }}</div>
+    <a class="details-link" href="#">
+      <span class="details-link-text">See Details</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
 </div>
