@@ -1,6 +1,6 @@
+import { NgModule, importProvidersFrom } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { HttpClientModule } from '@angular/common/http'
-import { NgModule, importProvidersFrom } from '@angular/core'
 
 import { InternetPlansModule } from './internet-plans/internet-plans.module'
 

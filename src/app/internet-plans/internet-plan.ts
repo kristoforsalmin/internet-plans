@@ -9,3 +9,8 @@ export interface InternetPlan {
   price: number
   readablePrice: string
 }
+
+export enum SortableProperty {
+  Price = 'price',
+  Speed = 'downloadSpeed'
+}

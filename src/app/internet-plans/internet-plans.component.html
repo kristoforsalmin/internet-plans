@@ -1,2 +1,12 @@
 <h1>Internet Plans</h1>
-<app-internet-plan-list [plans]="internetPlans"></app-internet-plan-list>
+
+<label *ngIf="internetPlans.length > 0">
+  Shows
+  <select [(ngModel)]="sortedBy">
+    <option *ngFor="let option of sortOptions" [ngValue]="option">
+      {{ option.label | lowercase }}
+    </option>
+  </select>
+</label>
+
+<app-internet-plan-list [plans]="internetPlans | sortBy: sortedBy"></app-internet-plan-list>

@@ -1,5 +1,7 @@
+<div *ngIf="plans.length === 0">Sorry, no plans available…</div>
+
 <ul>
-  <li *ngFor="let plan of plans">
-    <app-internet-plan-card [plan]="plan"></app-internet-plan-card>
+  <li *ngFor="let plan of plans; index as i">
+    <app-internet-plan-card [plan]="plan" [position]="i + 1"></app-internet-plan-card>
   </li>
 </ul>

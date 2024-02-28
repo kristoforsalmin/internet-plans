@@ -9,4 +9,5 @@ import { InternetPlan } from '../internet-plan'
 })
 export class InternetPlanCardComponent {
   @Input({ required: true }) plan!: InternetPlan
+  @Input({ required: true }) position!: number
 }
