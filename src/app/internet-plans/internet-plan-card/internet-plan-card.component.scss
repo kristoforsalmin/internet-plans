@@ -153,6 +153,7 @@
   border-radius: 0.9em;
 
   @container (width <= 35em) {
+    min-height: 4em;
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
