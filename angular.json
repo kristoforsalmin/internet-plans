@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "verivox-test-assignment": {
+    "internet-plans": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/verivox-test-assignment",
+            "outputPath": "dist/internet-plans",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "verivox-test-assignment:build:production"
+              "buildTarget": "internet-plans:build:production"
             },
             "development": {
-              "buildTarget": "verivox-test-assignment:build:development"
+              "buildTarget": "internet-plans:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "verivox-test-assignment:build"
+            "buildTarget": "internet-plans:build"
           }
         },
         "test": {
